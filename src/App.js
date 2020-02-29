@@ -13,7 +13,7 @@ const App = () => {
       const {
         serverRunTime,
         lastUpdateTime
-      } = await fetch('http://localhost:3000/api/get')
+      } = await fetch('https://arcane-fortress-59742.herokuapp.com/api/get')
         .then(res => res.json());
       setServerRunTime(serverRunTime);
       setLastUpdateTime(lastUpdateTime);
