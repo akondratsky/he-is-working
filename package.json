@@ -2,6 +2,7 @@
   "name": "he-is-working",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://akondratsky.github.io/hiwin/",
   "dependencies": {
     "date-fns": "^2.10.0",
     "react": "^16.13.0",
