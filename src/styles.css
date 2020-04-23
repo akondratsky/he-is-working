@@ -1,22 +1,50 @@
-html {
-    font-size: 36px;
+html, body, p {
+    margin: 0;
+    font-size: 12px;
+    overflow: hidden;
 }
 
-body, p {
-    margin: 0
+.container {
+    height: 100vh;
+    width: 100vw;
 }
 
-.app {
+.logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.chip {
+    position: absolute;
+    animation-name: chip-rotation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.authors {
+    position: absolute;
+    bottom: .5rem;
+    right: 1rem;
     display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;  
+    text-align: right;
 }
 
-.app img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
+@keyframes chip-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes chip-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
